@@ -1,0 +1,31 @@
+<div class="add-user-form">
+  <h2>Ajouter un nouvel utilisateur</h2>
+  <form (ngSubmit)="onSubmit()" class="form">
+    <mat-form-field appearance="fill" class="w-100 mb-3">
+      <mat-label>Nom</mat-label>
+      <input matInput [(ngModel)]="newUser.name" name="name" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-100 mb-3">
+      <mat-label>Occupation</mat-label>
+      <input matInput [(ngModel)]="newUser.occupation" name="occupation" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-100 mb-3">
+      <mat-label>Email</mat-label>
+      <input matInput [(ngModel)]="newUser.email" name="email" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-100 mb-3">
+      <mat-label>password</mat-label>
+      <input type="password" matInput [(ngModel)]="newUser.password" name="password" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-100 mb-3">
+      <mat-label>Bio</mat-label>
+      <input matInput [(ngModel)]="newUser.bio" name="bio" required>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" class="submit-button">Ajouter</button>
+  </form>
+</div>

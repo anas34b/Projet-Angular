@@ -1,0 +1,13 @@
+<div *ngIf="user" class="container user-details">
+  <h2 class="text-center mb-4">Détails de l'Utilisateur</h2>
+  <div class="card">
+      <div class="card-body">
+          <p class="card-text"><strong>ID:</strong> {{ user.id }}</p>
+          <p class="card-text"><strong>Nom:</strong> {{ user.name }}</p>
+          <p class="card-text"><strong>Email:</strong> {{ user.email }}</p>
+          <p class="card-text"><strong>Occupation:</strong> {{ user.occupation }}</p>
+          <p class="card-text"><strong>Bio:</strong> {{ user.bio }}</p>
+          <a [routerLink]="['/user-list']" class="btn btn-primary mt-3">Retour à l'accueil</a>
+      </div>
+  </div>
+</div>

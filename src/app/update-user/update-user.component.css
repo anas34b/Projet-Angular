@@ -1,0 +1,14 @@
+.update-user-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action-buttons button {
+    margin-left: 10px;
+}

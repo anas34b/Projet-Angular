@@ -1,0 +1,28 @@
+<div mat-dialog-content class="update-user-form">
+  <h1 mat-dialog-title>Mise à Jour de l'Utilisateur</h1>
+
+  <mat-form-field appearance="fill" class="w-100 mb-3">
+    <mat-label>Nom</mat-label>
+    <input matInput placeholder="Nom" [(ngModel)]="user.name">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="w-100 mb-3">
+    <mat-label>Occupation</mat-label>
+    <input matInput placeholder="Occupation" [(ngModel)]="user.occupation">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="w-100 mb-3">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Email" [(ngModel)]="user.email">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="w-100 mb-3">
+    <mat-label>Bio</mat-label>
+    <input matInput placeholder="Bio" [(ngModel)]="user.bio">
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions class="action-buttons">
+  <button mat-button (click)="onNoClick()">Annuler</button>
+  <button mat-button color="primary" (click)="onSaveClick()">Enregistrer</button>
+</div>

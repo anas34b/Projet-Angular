@@ -1,0 +1,16 @@
+.add-user-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.add-user-form .form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.submit-button {
+    margin-top: 20px;
+}
